@@ -1,3 +1,3 @@
-Made with Gatsbyjs and Strapi api
+Made with React (Gatsbyjs), Strapi api and Graphql
 
 Credits for starter project goes to freecodecamp.org
