@@ -37,7 +37,6 @@ const Jobs = () => {
       <div className="jobs-center">
         <div className="btn-container">
           {jobs.map((item, index) => {
-            console.log("Jobs -> item", item)
             return (
               <button
                 key={item.strapiId}
