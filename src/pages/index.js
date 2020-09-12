@@ -7,6 +7,8 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import ComingSoon from "react-coming-soon"
+
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
@@ -14,14 +16,21 @@ export default ({ data }) => {
   } = data
 
   return (
-    <Layout>
-      <SEO title="Home" description="This is Matias Massetti's home page" />
-      <Hero />
-      <Services />
-      <Jobs />
-      <Projects projects={projects} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="Latest articles" showLink />
-    </Layout>
+    <ComingSoon
+      title="Coming Soon"
+      bgColor="#abb8c3"
+      textColor="#212121"
+      date="Thu Oct 01 2020 00:00:00 GMT-0300 (Argentina Standard Time)"
+      illustration="git"
+    />
+    // <Layout>
+    //   <SEO title="Home" description="This is Matias Massetti's home page" />
+    //   {/* <Hero />
+    //   <Services />
+    //   <Jobs />
+    //   <Projects projects={projects} title="featured projects" showLink />
+    //   <Blogs blogs={blogs} title="Latest articles" showLink /> */}
+    // </Layout>
   )
 }
 
