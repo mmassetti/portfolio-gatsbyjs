@@ -2516,6 +2516,21 @@ clone@^1.0.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
 
+cloudinary-core@^2.10.2:
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/cloudinary-core/-/cloudinary-core-2.11.3.tgz#1440f61c6280485094aac87021b7e10f746dc69e"
+  integrity sha512-ZRnpjSgvx+LbSf+aEz5NKzxDB4Z0436aY/0BSDa90kAHiwAyd84VyEi95I74SE80e15Ri9t5S2xtksTXpzk9Xw==
+
+cloudinary@^1.25.0:
+  version "1.25.1"
+  resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-1.25.1.tgz#a6bba2529691e73673cd16e4ac96360a573a98e0"
+  integrity sha512-8iyMyOrRhRudJabdNc34GU/Vnr/ltDRq8gmkwQ4NpuJ1lD5Qw88DJGBNeODZnGSNXIPTLln708gsADVKe0AQMw==
+  dependencies:
+    cloudinary-core "^2.10.2"
+    core-js "3.6.5"
+    lodash "^4.17.11"
+    q "^1.5.1"
+
 cls-bluebird@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cls-bluebird/-/cls-bluebird-2.1.0.tgz#37ef1e080a8ffb55c2f4164f536f1919e7968aee"
@@ -2785,6 +2800,11 @@ core-js-compat@^3.6.2:
   dependencies:
     browserslist "^4.8.5"
     semver "7.0.0"
+
+core-js@3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-js@^2.4.0, core-js@^2.4.1, core-js@^2.6.5:
   version "2.6.11"
@@ -3957,7 +3977,7 @@ friendly-errors-webpack-plugin@^1.7.0:
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
-from2@^2.1.0:
+from2@^2.1.0, from2@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/from2/-/from2-2.3.0.tgz#8bfb5502bde4a4d36cfdeea007fcca21d7e382af"
   integrity sha1-i/tVAr3kpNNs/e6gB/zKIdfjgq8=
@@ -4723,6 +4743,14 @@ intl-messageformat@^8.3.7:
   dependencies:
     intl-format-cache "^4.2.43"
     intl-messageformat-parser "^5.2.1"
+
+into-stream@^5.1.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/into-stream/-/into-stream-5.1.1.tgz#f9a20a348a11f3c13face22763f2d02e127f4db8"
+  integrity sha512-krrAJ7McQxGGmvaYbB7Q1mcA+cRwg9Ij2RfWIeVesNBgVDZmzY/Fa4IpZUT3bmdRzMzdf/mzltCG2Dq99IZGBA==
+  dependencies:
+    from2 "^2.3.0"
+    p-is-promise "^3.0.0"
 
 invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
@@ -6098,10 +6126,10 @@ node-abi@^2.7.0:
   dependencies:
     semver "^5.4.1"
 
-node-addon-api@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-2.0.0.tgz#f9afb8d777a91525244b01775ea0ddbe1125483b"
-  integrity sha512-ASCL5U13as7HhOExbT6OlWJJUV/lLzL2voOSP1UVehpRD8FbSrSDjfScK/KwAvVTI5AS6r4VwbOMlIqtvRidnA==
+node-addon-api@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-3.1.0.tgz#98b21931557466c6729e51cb77cd39c965f42239"
+  integrity sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==
 
 node-fetch@2.6.0:
   version "2.6.0"
@@ -6511,6 +6539,11 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
+
+p-is-promise@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/p-is-promise/-/p-is-promise-3.0.0.tgz#58e78c7dfe2e163cf2a04ff869e7c1dba64a5971"
+  integrity sha512-Wo8VsW4IRQSKVXsJCn7TomUaVtyfjVDn3nUP7kE967BQk0CwFpdbZs0X0uk5sW9mkBa9eNM7hCMaG93WUAwxYQ==
 
 p-limit@^2.0.0:
   version "2.3.0"
@@ -7014,6 +7047,11 @@ purest@3.1.0:
     "@purest/config" "^1.0.0"
     "@request/api" "^0.6.0"
     extend "^3.0.0"
+
+q@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
+  integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
 qs@6.7.0:
   version "6.7.0"
@@ -8356,12 +8394,12 @@ sprintf-js@^1.1.1:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
   integrity sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==
 
-sqlite3@latest:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-5.0.0.tgz#1bfef2151c6bc48a3ab1a6c126088bb8dd233566"
-  integrity sha512-rjvqHFUaSGnzxDy2AHCwhHy6Zp6MNJzCPGYju4kD8yi6bze4d1/zMTg6C7JI49b7/EM7jKMTvyfN/4ylBKdwfw==
+sqlite3@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-5.0.2.tgz#00924adcc001c17686e0a6643b6cbbc2d3965083"
+  integrity sha512-1SdTNo+BVU211Xj1csWa8lV6KM0CtucDwRyA0VHl91wEH1Mgh7RxUpI4rVvG7OhHrzCSGaVyW5g8vKvlrk9DJA==
   dependencies:
-    node-addon-api "2.0.0"
+    node-addon-api "^3.0.0"
     node-pre-gyp "^0.11.0"
   optionalDependencies:
     node-gyp "3.x"
@@ -8747,6 +8785,14 @@ strapi-provider-email-sendmail@3.0.5:
   dependencies:
     sendmail "^1.6.1"
     strapi-utils "3.0.5"
+
+strapi-provider-upload-cloudinary@^3.0.5:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.5.4.tgz#63f29ffd0fb9a7cec9e16f657e7d21e0d012a724"
+  integrity sha512-yRBj8P4O2zc7r3bYzzsoRmhvKTfP5NhThXk6vs+Bd2LUNhk/1FeaZ55ghdP/F4+5ZChXXL6gsxOT5DgrOR68GQ==
+  dependencies:
+    cloudinary "^1.25.0"
+    into-stream "^5.1.0"
 
 strapi-provider-upload-local@3.0.5:
   version "3.0.5"
@@ -9798,9 +9844,9 @@ xtend@^4.0.0, xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
-  integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
 
 yallist@^3.0.0, yallist@^3.0.2, yallist@^3.0.3:
   version "3.1.1"
