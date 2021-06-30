@@ -20,7 +20,7 @@ const ProjectsPage = ({
 
 export const query = graphql`
   {
-    allStrapiProjects(sort: { fields: order, order: DESC }) {
+    allStrapiProjects(sort: { fields: order, order: ASC }) {
       nodes {
         description
         github
@@ -32,9 +32,9 @@ export const query = graphql`
         }
         url
         image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+          localFile {
+            childImageSharp {
+              gatsbyImageData
             }
           }
         }

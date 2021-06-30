@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({
   description,
@@ -12,10 +13,16 @@ const Project = ({
   index,
   order,
 }) => {
+  const projectImage = getImage(image.localFile.childImageSharp.gatsbyImageData)
+
   return (
     <article className="project">
-      {image && (
-        <Image fluid={image.childImageSharp.fluid} className="project-img" />
+      {projectImage && (
+        <GatsbyImage
+          image={projectImage}
+          alt={"Project"}
+          className="project-img"
+        />
       )}
       <div className="project-info">
         <span className="project-number">0{index + 1}.</span>

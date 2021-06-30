@@ -1,13 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import { Link } from "gatsby"
 const Blog = ({ id, title, image, date, category, slug, desc }) => {
+  const blogImage = getImage(image.localFile.childImageSharp.gatsbyImageData)
+
   return (
     <Link to={`/blogs/${slug}`} className="blog" key={id}>
       <article>
-        {image && (
-          <Image fluid={image.childImageSharp.fluid} className="blog-img" />
+        {blogImage && (
+          <GatsbyImage image={blogImage} alt={"Blog"} className="blog-img" />
         )}
         <div className="blog-card">
           <h4>{title}</h4>
