@@ -29,7 +29,7 @@ const About = ({
           />
           <article className="about-text">
             <Title title={title} />
-            {/* <p>{info}</p> */}
+            <p>{info}</p>
             {/* <ReactMarkdown source={info} /> */}
 
             <div className="about-stack">
