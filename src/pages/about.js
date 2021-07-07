@@ -29,8 +29,8 @@ const About = ({
           />
           <article className="about-text">
             <Title title={title} />
-            <p>{info}</p>
-            {/* <ReactMarkdown source={info} /> */}
+            {/* <p>{info}</p> */}
+            <ReactMarkdown source={info} />
 
             <div className="about-stack">
               {stack.map(item => {
