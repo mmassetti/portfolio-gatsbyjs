@@ -14,7 +14,7 @@ const About = ({
   const { info, stack, title, image } = nodes[0]
 
   const aboutImage = getImage(
-    image[0].localFile.childImageSharp.gatsbyImageData
+    image?.localFile?.childImageSharp?.gatsbyImageData
   )
 
   return (
